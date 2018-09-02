@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900')
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300')
+$basic-color: #03d7c9
+
+body
+	h1 
+		color: #ffffff
+		font-weight: bold
+		font-size: 32px
+		font-family: 'Playfair Display', serif
+	h2
+		font-size: 22px
+		text-transform: uppercase
+		font-family: 'Playfair Display', serif
+		font-weight: bold
+		text-align: center
+	p 
+		font-size: 14px
+		font-family: 'Roboto', sans-serif 
+	.line
+		content: ""
+		width: 50px
+		height: 1px
+		margin: 0 auto
+		background-color: $basic-color
+	.navbar-light 
+		.navbar-toggler
+			border-color: #ffffff
+	button
+		&:focus
+			outline: none 
+	.header
+		height: 100vh
+		background: 
+			image: url('../img/header-img.jpg')
+			repeat: no-repeat
+			size: cover
+			position: 100% 100%
+			min-width: 100%
+		.rgba
+			background: rgba(48, 35, 95, 0.8)
+			height: 100%
+			.navbar-brand
+				color: $basic-color
+				span 
+					font-size: 30px
+					margin-left: 10px
+					font-weight: 300
+		.navbar-collapse
+			justify-content: flex-end
+			.navbar-nav
+				.active>.nav-link
+					color: $basic-color
+			.nav-link
+				color: white
+				text-transform: uppercase
+				font-size: 14px
+				font-family: 'Roboto', sans-serif
+				font-weight: bold
+				&:focus
+					color: $basic-color
+		.carousel 
+			text-align: center
+			margin: 0 auto
+			padding: 100px
+			position: relative
+			color: black
+			width: 80%
+			height: auto
+			.carousel-indicators
+				li 
+					width: 10px
+					height: 10px
+					margin-right: 3px
+					margin-left: 3px
+					text-indent: -999px
+					background-color: rgba(255,255,255,.5)
+					border-radius: 10px
+					cursor: pointer
+					&.active
+						background-color: $basic-color
+			.carousel-item
+				h1 
+					margin-bottom: 20px
+				p 
+					color: #ffffff
+					margin-bottom: 50px
+					margin-top: 20px
+				.learn-more
+					padding: 10px 15px
+					cursor: pointer
+					background: none
+					text-transform: uppercase
+					border: 1px solid $basic-color
+					color: $basic-color
+					margin-bottom: 55px
+					font-weight: 700
+.our-story
+	padding: 70px 0
+	.story-left
+		display: flex
+		justify-content: center
+	.story-right
+		h2 
+			text-align: left
+		p 
+			margin: 30px 0 
+		.learn-more
+			padding: 10px 15px
+			cursor: pointer
+			background: none
+			text-transform: uppercase
+			border: 1px solid $basic-color
+			color: $basic-color
+			font-weight: 700
+.video-wrapper
+	position: relative
+  	display: inline-block
+	.video-overlay
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		background:
+			image: url("../img/video-img.jpg")
+			size: cover
+			position: 100% 100%
+		img 
+			display: block 
+			margin: 0 auto
+			border-radius: 50%
+			cursor: pointer
+		h2 
+			margin-top: 30px
+			color: #fff
+.expertise
+	text-align: center
+	padding: 60px 0 70px 0
+	.line
+		content: ""
+		width: 50px
+		height: 2px
+		margin: 0 auto
+		background-color: #c6c4c9
+	.expert-content
+		padding-top: 60px
+		.expert-item
+			margin-bottom: 80px
+			.card
+				border: none
+				.card-img
+				@for $i from 1 to 7
+					.card-img-#{$i}
+						display: block
+						width: 68px
+						height: 56px
+						margin: 0 auto
+						background:
+							image: url('../img/#{$i}.png')
+							size: 70% 90%
+							position: 50% 0
+							repeat: no-repeat
+.amazing
+	text-align: center
+	background: 
+			image: url('../img/amazing-team.jpg')
+			repeat: no-repeat
+			size: cover
+			position: 100% 100%
+			min-width: 100%				
+	.rgba
+		background: rgba(48, 35, 95, 0.8)
+		height: 100%
+		color: #ffffff
+		h2 
+			padding-top: 80px
+		p 
+			text-align: center
+		.line
+			content: ""
+			width: 50px
+			height: 2px
+			margin: 0 auto
+			background-color: #c6c4c9
+		.amazing-cards
+			padding: 30px 0 55px 0
+			justify-content: center
+			.amazing-item
+				margin-bottom: 20px
+				max-width: 265px
+				.card
+					background-color: transparent
+					border: 1px solid #fff
+					.card-img
+						height: 230px
+						text-align: center
+						padding: 20px
+						background-color: #fff 
+					.card-body
+						text-align: center
+						padding: 15px 50px
+						h5 
+							font-size: 14px
+							margin-bottom: 0
+						p 
+							color: #b1b0ba
+		.learn-more
+			padding: 10px 15px
+			cursor: pointer
+			background: none
+			text-transform: uppercase
+			border: 2px solid $basic-color
+			color: $basic-color
+			font-weight: 700
+			text-align: center
+			margin-bottom: 65px
+.our-works
+	.works-top
+		display: flex
+		justify-content: space-around
+		padding: 60px 0
+		a 
+			text-decoration: none
+			color: #413d4b
+	.gallery
+		.row
+			margin-right: 0
+			margin-left: 0
+			.img
+				padding-left: 0
+				padding-right: 0
+				cursor: pointer
+				&:hover
+					opacity: 0.7
+	.but
+		display: flex
+		.learn-more
+			padding: 10px 15px
+			cursor: pointer
+			background: none
+			text-transform: uppercase
+			border: 2px solid $basic-color
+			color: $basic-color
+			font-weight: 700
+			text-align: center
+			margin: 60px auto
+.feedback
+	background: 
+			image: url('../img/img-feedback.jpg')
+			repeat: no-repeat
+			size: cover
+			position: 100% 100%
+			min-width: 100%
+	.rgba	
+		background: rgba(48, 35, 95, 0.8)
+		height: 100%
+		#carouselExampleIndicators 
+			padding: 0 10px 80px 10px
+			height: 100%
+			.carousel-indicators
+				width: 100%
+				top: 80%
+				bottom: 0
+				margin-right: 0
+				margin-left: 0
+				align-items: center
+				li 
+					width: 40px
+					height: 40px
+					margin: 5px
+					cursor: pointer
+					border-radius: 50px
+					opacity: 0.4
+					overflow: hidden
+					transition: all 0.4s
+					text-indent: 0
+					img 
+						height: 100%
+				.active
+					background: #333333
+					width: 55px
+					height: 55px
+					border-radius: 100px
+					opacity: 1
+					overflow: hidden
+			.carousel-inner
+				min-height: 300px
+				.carousel-item
+					color: #fff
+					blockquote
+						border-left: none
+    					margin: 0
+						.row
+							justify-content: center
+							.quote
+								margin-top: 50px
+							p 
+								padding: 40px 0
+							span 
+								font:
+									size: 15px
+									weight: bold
+							small
+								color: #fff 
+								font-size: 12px	
+			.carousel-control-prev
+				justify-content: flex-end
+			.carousel-control-next
+				justify-content: flex-start
+			.carousel-control-prev-icon
+				color: #9f9f9f
+				background:
+					image: url('../img/icon-prev.png')
+					repeat: no-repeat
+					size: 56%
+			.carousel-control-next-icon
+				color: #9f9f9f
+				background:
+					image: url('../img/icon-next.png')
+					repeat: no-repeat
+					size: 56%
+.client
+	padding: 70px 0
+	.block-form
+		h2
+			text-align: left
+			margin-bottom: 30px
+		form 
+			.form-group
+				margin-bottom: 20px
+			.learn-more
+				padding: 9px 40px
+				cursor: pointer
+				background: none
+				text-transform: uppercase
+				border: 2px solid $basic-color
+				color: $basic-color
+				font-weight: 700
+	.block-client
+		h2 
+			margin-bottom: 30px
+			text-align: left
+		.row
+			.clients-items
+				margin-bottom: 30px
+.footer
+	background: 
+		image: url('../img/footer-img.jpg')
+		repeat: no-repeat
+		size: cover
+		position: 100% 100%
+	.rgba
+		background: rgba(48, 35, 95, 0.8)
+		height: 100%
+	.footer-content
+		font-family: 'Roboto', sans-serif
+		padding: 80px 0 40px 0
+		color: #fff
+		display: flex
+		a 
+			color: #fff
+		.footer-text
+			span 
+				color: $basic-color
+			p 
+				padding: 20px 0 60px 0
+				font-size: 14px
+			.help
+				display: flex
+				justify-content: space-between
+				a 
+					text-transform: uppercase
+					font-size: 14px
+		.footer-address
+			h2 
+				font-size: 15px
+				text-align: left
+				margin-top: 20px
+			.adr
+				background:
+					image: url('../img/address-icon.png')
+					repeat: no-repeat
+				width: 16px
+				height: 20px
+				display: inline-block
+				vertical-align: bottom
+				position: absolute
+				top: 78px
+			address
+				font-size: 14px
+				line-height: 1.9
+				margin-left: 30px	
+				margin-top: 37px		
+			p 
+				.tel
+					background:
+						image: url('../img/phone-icon.png')
+						repeat: no-repeat
+					width: 16px
+					height: 16px
+					display: inline-block
+					vertical-align: bottom	
+					margin-right: 10px
+					margin-bottom: 3px
+		.footer-social
+			padding: 14px 0 0 0
+			h2 
+				font-size: 15px
+				text-align: left
+			form 
+				input
+					background-color:  transparent
+					border-radius: 0	
+			.social-icons
+				padding-top: 17px
+				a 
+					text-decoration: none
+					margin-right: 7px
+					img 
+			.footer-copyright
+				margin-top: 109px
+				font-size: 14px
+
+		
+@media screen and (max-width: 992px)
+	.client
+		.row
+			justify-content: center	
+			align-items: center
+			.block-form	
+				padding-bottom: 40px
+				form 
+					.learn-more	
+				.block-client
+					h2 
+						margin-top: 40px
+						text-align: center
+	.footer
+		.footer-content
+			flex-direction: column
+			.footer-text
+				p 
+					padding: 20px 0 8px 0
+				.help
+					justify-content: flex-start
+					a 
+						margin-right: 15px
+@media screen and (max-width: 768px)
+	body
+		.header
+			.carousel
+				width: 100%
+				padding: 100px 40px
+				.carousel-item
+					.learn-more
+						margin-bottom: 0
+		.our-story
+			.story-left
+				img 
+					margin-bottom: 30px
+			.story-right
+				padding: 10px 30px
+		.expertise
+			.expert-content 
+				.expert-item
+					margin-bottom: 20px
+		.feedback
+			.container
+				width: 100%
+		.client
+			.block-form
+				text-align: center
+				h2 
+					text-align: center
+				form 
+					.learn-more	
+						width: 50%				
+			.block-client
+				h2 
+					margin-top: 40px	
+@media screen and (max-width: 576px)
+	.our-works
+		.gallery
+			.img 
+				margin: 3px 30px
+	.client
+		padding: 0 20px
+		.block-client
+			h2 
+				text-align: center
+				margin-top: 0
+			.clients-items
+				text-align: center
+				
+
+
+
+
+
+
+	
+
