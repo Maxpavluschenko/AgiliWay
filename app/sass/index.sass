@@ -16,7 +16,7 @@ body
 		text-align: center
 	p 
 		font-size: 14px
-		font-family: 'Roboto', sans-serif 
+		font-family: 'Roboto', sans-serif 	
 	.line
 		content: ""
 		width: 50px
@@ -30,7 +30,6 @@ body
 		&:focus
 			outline: none 
 	.header
-		height: 100vh
 		background: 
 			image: url('../img/header-img.jpg')
 			repeat: no-repeat
@@ -59,10 +58,12 @@ body
 				font-weight: bold
 				&:focus
 					color: $basic-color
+				&:hover
+					color: $basic-color
 		.carousel 
 			text-align: center
 			margin: 0 auto
-			padding: 100px
+			padding: 150px 0
 			position: relative
 			color: black
 			width: 80%
@@ -71,6 +72,7 @@ body
 				li 
 					width: 10px
 					height: 10px
+					bottom: 30px
 					margin-right: 3px
 					margin-left: 3px
 					text-indent: -999px
@@ -80,6 +82,8 @@ body
 					&.active
 						background-color: $basic-color
 			.carousel-item
+				max-width: 686px
+				margin: 0 auto
 				h1 
 					margin-bottom: 20px
 				p 
@@ -93,8 +97,11 @@ body
 					text-transform: uppercase
 					border: 1px solid $basic-color
 					color: $basic-color
-					margin-bottom: 55px
+					margin-bottom: 34px
 					font-weight: 700
+					&:hover
+						background-color: $basic-color
+						color: #fff
 .our-story
 	padding: 70px 0
 	.story-left
@@ -113,6 +120,9 @@ body
 			border: 1px solid $basic-color
 			color: $basic-color
 			font-weight: 700
+			&:hover
+				background-color: $basic-color
+				color: #fff
 .video-wrapper
 	position: relative
   	display: inline-block
@@ -218,6 +228,9 @@ body
 			font-weight: 700
 			text-align: center
 			margin-bottom: 65px
+			&:hover
+				background-color: $basic-color
+				color: #fff
 .our-works
 	.works-top
 		display: flex
@@ -248,6 +261,9 @@ body
 			font-weight: 700
 			text-align: center
 			margin: 60px auto
+			&:hover
+				background-color: $basic-color
+				color: #fff
 .feedback
 	background: 
 			image: url('../img/img-feedback.jpg')
@@ -340,6 +356,9 @@ body
 				border: 2px solid $basic-color
 				color: $basic-color
 				font-weight: 700
+				&:hover
+					background-color: $basic-color
+					color: #fff
 	.block-client
 		h2 
 			margin-bottom: 30px
@@ -414,13 +433,30 @@ body
 			form 
 				input
 					background-color:  transparent
-					border-radius: 0	
+					border-radius: 0
+				.btn-footar
+					background-image: url('../img/paper.png')
+					background-repeat: no-repeat
+					background-size: 42%
+					background-position: center
+					height: 40px
+					width: 70px	
+					border-radius: 0
+				.btn-outline-success
+					outline: none
+					background-color: rgba(137, 134, 172, 0.6)
+					border: none
+					&:focus
+						outline: none
+						box-shadow: none
 			.social-icons
 				padding-top: 17px
 				a 
 					text-decoration: none
 					margin-right: 7px
 					img 
+					&:hover
+						opacity: 0.7
 			.footer-copyright
 				margin-top: 109px
 				font-size: 14px
@@ -483,10 +519,25 @@ body
 				h2 
 					margin-top: 40px	
 @media screen and (max-width: 576px)
-	.our-works
-		.gallery
-			.img 
-				margin: 3px 30px
+	.header
+		.navbar
+			padding: .5rem 2rem
+		.carousel
+			padding: 72px 37px
+			.carousel-item
+					h1 
+						font-size: 20px
+			.carousel-indicators
+				display: none
+	.amazing
+		.rgba 
+			p 
+				max-width: 215px
+				margin: 0 auto
+			.amazing-cards
+				padding: 30px 0 40px 0
+				p 
+					margin-bottom: 5px
 	.client
 		padding: 0 20px
 		.block-client
@@ -495,7 +546,11 @@ body
 				margin-top: 0
 			.clients-items
 				text-align: center
-				
+	.footer
+		.footer-content
+			padding: 35px 0 41px 31px	
+			input
+				max-width: 250px		
 
 
 

@@ -11,3 +11,7 @@ type="text/javascript">
         $('body,html').animate({scrollTop: top}, 900);
     });
 });
+
+$('[data-fancybox="images"]').fancybox({
+    
+});
